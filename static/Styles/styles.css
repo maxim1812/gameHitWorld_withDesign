@@ -1,0 +1,163 @@
+body
+{
+    background-color: #318fa0;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#topBox
+{
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #200B59;
+    width: 100%;
+    height: 50px;
+    color: white;
+    box-shadow: 0 0 10px rgb(255,255,255);
+}
+
+#canvasBox
+{
+    position:absolute;
+    left: 0px;
+    top: 70px;
+    padding-left:50px;
+    padding-right:50px;
+}
+
+#descriptionGameBox
+{
+    position:absolute;
+    left: 50px;
+    top: 70px;
+    width: 600px;
+    padding: 10px 30px 30px 30px;
+    color: white;
+    background-color: #200B59;
+    box-shadow: 0 0 10px rgb(255,255,255);
+    border-radius: 14px 14px 14px 14px;
+}
+
+#gameResultBox
+{
+    position:absolute;
+    left: 50px;
+    top: 70px;
+    width: 600px;
+    padding: 10px 30px 30px 30px;
+    color: white;
+    background-color: #200B59;
+    box-shadow: 0 0 10px rgb(255,255,255);
+    border-radius: 14px 14px 14px 14px;
+}
+
+#avtorizOrRegistBox
+{
+    position:absolute;
+    left: 50px;
+    top: 70px;
+    width: 600px;
+    padding: 10px 30px 30px 30px;
+    color: white;
+    background-color: #200B59;
+    box-shadow: 0 0 10px rgb(255,255,255);
+    border-radius: 14px 14px 14px 14px;
+}
+
+#gameMyAll
+{
+    position:absolute;
+    left: 50px;
+    top: 70px;
+    width: 600px;
+    padding: 10px 30px 30px 30px;
+    color: white;
+    background-color: #200B59;
+    box-shadow: 0 0 10px rgb(255,255,255);
+    border-radius: 14px 14px 14px 14px;
+}
+
+#bestResultsBox
+{
+    position:absolute;
+    left: 50px;
+    top: 70px;
+    width: 600px;
+    padding: 10px 30px 30px 30px;
+    color: white;
+    background-color: #200B59;
+    box-shadow: 0 0 10px rgb(255,255,255);
+    border-radius: 14px 14px 14px 14px;
+}
+
+td
+{
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.imp
+{
+    font-size: 14px;
+    border-style: solid;
+    border-color: #0000FF;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn
+{
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #318fa0;
+    cursor: pointer;
+    width: 300px;
+    color: white;
+}
+
+.btn:hover
+{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+
+#bg
+{
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+#bg img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    z-index: -999;
+}
+
+.changeColorClass:hover
+{
+    color: #89d9c0;
+}

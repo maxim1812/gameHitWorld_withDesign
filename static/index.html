@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Hit World</title>
+	<link rel = "stylesheet" type = "text/css" href = "Styles/styles.css"/>
+</head>
+<body>
+
+<div id="bg">
+     <img src="Images/backFon.jpg">
+</div>
+
+
+<div hidden id = "topBox">
+	<p>
+		&nbsp  &nbsp  &nbsp &nbsp  &nbsp  &nbsp 
+		<b  id = 'startGameBtn' style = "cursor:pointer" class = "changeColorClass">Начать игру</b> &nbsp  &nbsp  &nbsp | &nbsp  &nbsp  &nbsp
+		<b  id = 'showTheDescriptionBtn' style = "cursor:pointer" class = "changeColorClass">Описание игры</b> &nbsp  &nbsp  &nbsp | &nbsp  &nbsp  &nbsp
+		<b  id = 'getMyResultsBtn' style = "cursor:pointer" class = "changeColorClass">Мои результаты</b> &nbsp  &nbsp  &nbsp | &nbsp  &nbsp  &nbsp
+		<b  id = 'showBestResultsBtn' style = "cursor:pointer" class = "changeColorClass">Топ игроков</b> &nbsp  &nbsp  &nbsp | &nbsp  &nbsp  &nbsp
+		<b  id = 'deleteMyStorageBtn' style = "cursor:pointer" class = "changeColorClass">Выход</b>
+		&nbsp  &nbsp  &nbsp &nbsp  &nbsp  &nbsp 
+	</p>
+</div>
+
+<div hidden id = "canvasBox">
+	<div style = 'box-shadow: 0 0 10px rgb(255,255,255);'>
+		<canvas width = '600' height = '600' id='canvas' style = 'cursor:move'></canvas>
+	</div>
+	<div style = 'box-shadow: 0 0 10px rgb(255,255,255);'>
+		<p style = "color: white; background-color: #200B59; padding: 7px 7px 7px 7px" id = 'pointsField'>Score: 0</p>
+	</div>
+</div>
+
+<div hidden id = "descriptionGameBox">
+	<h2>Описание игры</h2>
+	<hr>
+	<p>
+		<h3>Вы играете за инопланетянина с планеты Code17.</h3>
+		<h3>Ваша задача в игре: как можно дольше избегать столкновения с астероидами.</h3>
+		<h3>При столкновении с астероидом игра заканчивается.</h3>
+		<h3>Управление движением главного героя осуществляется с помощью мышки.</h3>
+	</p>
+</div>
+
+<div hidden id = "bestResultsBox">
+	<h2>Топ игроков</h2>
+	<hr>
+	<p id = "bestResultsText">
+
+	</p>
+</div>
+
+<div hidden id = "avtorizOrRegistBox">
+	<img src = "Images/TIT.png">
+	<br>
+	<h2>Добро пожаловать</h2>
+	<hr>
+	<form>
+		<p>Логин</p>
+		<input type = 'text' id = 't1' class = 'imp' placeholder = 'Maxim_2017' size = '40' maxlength = '25' spellcheck = 'false' autocomplete = 'off'>
+		<br>
+		<p>Пароль</p>
+		<input type = 'password' id = 't2' class = 'imp' placeholder = 'wP_44_dFa' size = '40' maxlength = '25' spellcheck = 'false' autocomplete = 'off'>
+		<br>
+		<br>
+		<br>
+		<input type = 'button' id = "avtBtn" class = 'btn' value = 'Войти в аккаунт'>
+		<br>
+		<br>
+		<input type = 'button' id = "regBtn" class = 'btn'  value = 'Зарегистрироваться'>
+		<br>
+		<br>
+		<b><p id = 'ansReq'></p></b>
+		<br>
+	</form>
+</div>
+
+<div hidden id = "gameResultBox">
+	<h2>Результат игры</h2>
+	<hr>
+	<p>
+		<h2 id = 'gameResultStr'></h2>
+	</p>
+</div>
+
+<div hidden id = "gameMyAll">
+	<h2>Мои результаты</h2>
+	<hr>
+	<p>
+		<h4 id = 'allResBigStr'></h4>
+	</p>
+</div>
+
+<script>
+    "use strict";
+</script>
+
+<script src = "menuHelpFunctions/bestResultsFunctions.js"></script>
+<script src = "menuHelpFunctions/storageClass.js"></script>
+<script src = "menuHelpFunctions/avtorizationFunction.js"></script>
+<script src = "menuHelpFunctions/registrationFunction.js"></script>
+<script src = "menuHelpFunctions/stringControl.js"></script>
+<script src = "views/renderBoxes.js"></script>
+<script src = "gameFiles/gameModels/holstClass.js"></script>
+<script src = "gameFiles/gameModels/personFactory.js"></script>
+<script src = "gameFiles/gameModels/personDecorator.js"></script>
+<script src = "gameFiles/gameModels/positionHitClass.js"></script>
+<script src = "gameFiles/gameFunctions/creatingHeroAndEnemies.js"></script>
+<script src = "gameFiles/gameFunctions/renderEnemiesAndHero.js"></script>
+<script src = "gameFiles/gameFunctions/startAndStopGame.js"></script>
+<script src = "gameFiles/gameFunctions/movingOfHeroAndEnemies.js"></script>
+<script src = "menuHelpFunctions/saveGameResult.js"></script>
+<script src = "menuHelpFunctions/onLoadEvent.js"></script>
+
+</body>
+</html>
